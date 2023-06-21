@@ -1,0 +1,451 @@
+/*
+Theme Name: Altitude
+Author: Corsiva Lab
+Team: Corsiva Lab
+Description: Altitude
+Version: 1.0
+License: GNU General Public License v2 or later
+Tags: SASS, clean, bootstrap
+Text Domain: Altitude
+*/
+
+/* .footer{
+    clear: both;
+} */
+
+.products-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 991px) {
+    .products-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .products-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a{
+    margin-left: 0.5rem;
+}
+.section-instagram .sbi-header{
+    display: none;
+}
+.section-instagram .sbi_follow_btn.sbi_custom a{
+    padding: 2rem 4.5rem !important;
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background-color: #04314A !important;
+    border: 2px solid #04314A !important;
+    transition: all 0.3s ease-out;
+    font-family: "Oswald" !important;
+    text-transform: uppercase !important;
+}
+.woocommerce .coupon button, .woocommerce .wc-proceed-to-checkout .checkout-button{
+  padding: 2rem 4.5rem;
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  background-color: #04314A !important;
+  border: 2px solid #04314A !important;
+  transition: all 0.3s ease-out;
+  font-family: "Oswald" !important;
+  text-transform: uppercase !important;
+}
+.select2-container .select2-selection--single {
+    border: 1px solid #E4E4E4 !important;
+}
+.xoo-wsc-container, .xoo-wsc-slider{
+    max-width: 50rem;
+    right: -50rem;
+}
+.woocommerce .category dl.variation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    font-size: 2rem;
+
+}
+.woocommerce .section-thank-you  .category{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+}
+.woocommerce .section-thank-you  .category .wc-item-meta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    max-width: 90%;
+}
+.woocommerce .section-thank-you  .category .wc-item-meta li{
+    min-width: 20rem;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+}
+.woocommerce .section-thank-you  .category .wc-item-meta li strong,.woocommerce .section-thank-you  .category .wc-item-meta li p{
+    width: fit-content;
+}
+.woocommerce .section-thank-you  .category .wc-item-meta li strong{
+    font-weight: 500;
+}
+.woocommerce .checkout .category dl.variation{
+    width: 90%;
+}
+.woocommerce .box-booking .group-btn button{
+    padding: 2.3rem 5rem;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    font-family: "Oswald";
+    font-size: 5rem;
+    font-weight: 500;
+    color: #04314a !important;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    background: transparent !important;
+  }
+  .woocommerce div.product .woocommerce-tabs ul.tabs::before, .woocommerce div.product .woocommerce-tabs ul.tabs::after {
+    content: unset;
+  }
+  .woocommerce div.product .woocommerce-tabs ul.tabs li:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    padding: 0;
+    font-weight: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    transition: inherit;
+  }
+.item-product .price {
+    padding-top: 1rem!important;
+    font-size: 2rem!important;
+    line-height: 1.8!important;
+    font-weight: 500 !important;
+    font-family: "Oswald"  !important;
+    color: #04314A !important;
+  }
+  .woocommerce ul.products li.product a img {
+    margin: 0;
+}
+.woocommerce .box-booking .wcpa_form_item label{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #04314A;
+}
+.woocommerce .box-booking .wcpa_form_item input, .woocommerce .box-booking .wcpa_form_item select {
+    font-size: 1.8rem;
+    padding: 2rem;
+    margin-bottom: 0;
+
+  }
+  .woocommerce .box-booking .wcpa_form_item .select .select_arrow {
+    display: none;
+  }
+  .woocommerce .box-booking .wcpa_form_item select {
+    margin-bottom: 0;
+    background-image: url(./assets/icons/dropdown.png);
+    background-repeat: no-repeat;
+    background-position: right 2rem center;
+    background-size: 2rem;
+  }
+  .woocommerce .box-booking .wcpa_form_item [type=date] {
+    background: #fff url(./assets/icons/calendar_icon.png) 97% 50% no-repeat;
+    background-size: 2rem;
+  }
+  .woocommerce .box-booking .wcpa_form_item [type=date]::-webkit-inner-spin-button {
+    display: none;
+  }
+  .woocommerce .box-booking .wcpa_form_item [type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  .woocommerce .box-booking
+.woocommerce .woocommerce-ordering {
+    margin: 0 ;
+}
+
+
+.woocommerce ul.products::after,
+.woocommerce ul.products::before {
+    content: "";
+}
+
+
+.woocommerce nav.woocommerce-pagination ul {
+    border: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+    border-right: 0;
+    float: none;
+}
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+    font-size: 2.6rem;
+    font-family: "Oswald";
+    font-weight: 500;
+    color: #04314A;
+}
+.woocommerce nav.woocommerce-pagination ul li .page-numbers {
+    display: block;
+    padding: 0 1.5rem;
+    color: rgba(14, 28, 30, 0.8) !important;
+    transition: all 0.3s ease-out;
+    line-height: 1.3;
+    min-width: unset;
+    font-size: 2rem;
+}
+.woocommerce-checkout table.shop_table tfoot tr.order_total th,
+.woocommerce-checkout table.shop_table tfoot tr.order_total td {
+    border-block: 1px solid #0e1c1e20;
+    padding-block: 3rem;
+}
+
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.prev,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.next {
+    width: 4.5rem;
+}
+
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.prev {
+    transform: rotate(90deg);
+}
+
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.next {
+    transform: rotate(-90deg);
+}
+
+.woocommerce nav.woocommerce-pagination ul li .page-numbers:hover,
+.woocommerce nav.woocommerce-pagination ul li .page-numbers.current {
+    font-weight: 700;
+    background: transparent;
+}
+
+.rtwpvg-images {
+    margin-bottom: 0;
+}
+
+.woocommerce div.product .product_title {
+    line-height: 0.9;
+}
+
+.btn {
+    transition: all 0.3s ease-out;
+}
+
+p.first-payment-date {
+    margin-bottom: 0;
+}
+
+.woocommerce .single_variation_wrap {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.woocommerce div.product form.cart .woocommerce-variation-price {
+    display: block;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .woocommerce-cart table.cart .product-image {
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .woocommerce-cart table.cart .product-title {
+        max-width: 30rem;
+    }
+
+    .woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+    .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 768px) {
+    .woocommerce-cart .cart-collaterals .cart_totals {
+        width: 48%;
+    }
+}
+
+.woocommerce button.button:disabled {
+    color: #fcf9f5 !important;
+    padding: 2rem 5.5rem !important;
+    pointer-events: none;
+}
+
+.woocommerce a.added_to_cart {
+    display: none;
+}
+
+.woocommerce ul#shipping_method li input {
+    margin: 0 1rem 0;
+    vertical-align: middle;
+}
+
+.woocommerce table.shop_table tr.shipping a {
+    text-decoration: underline;
+}
+
+.woocommerce table.shop_table tr.shipping a:hover {
+    text-decoration: none;
+}
+
+.woocommerce-js #respond input#submit,
+.woocommerce-js #respond input#submit.alt,
+.woocommerce-js a.button,
+.woocommerce-js button.button,
+.woocommerce-js input.button,
+.woocommerce-js a.button.alt,
+.woocommerce-js button.button.alt,
+.woocommerce-js input.button.alt {
+    padding: 2rem 5.5rem;
+    line-height: 1.3;
+    font-weight: 400;
+    border-radius: 0;
+    color: #fcf9f5;
+    background-color: #04314A;
+    border: 2px solid #04314A;
+    transition: all 0.3s ease-out;
+    font-size: 1.8rem;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woocommerce-js #respond input#submit:hover,
+.woocommerce-js #respond input#submit.alt:hover,
+.woocommerce-js a.button:hover,
+.woocommerce-js button.button:hover,
+.woocommerce-js input.button:hover,
+.woocommerce-js a.button.alt:hover,
+.woocommerce-js button.button.alt:hover,
+.woocommerce-js input.button.alt:hover {
+    color: #04314A;
+    background-color: transparent;
+}
+
+input[type="number"].xoo-wsc-qty {
+    margin-bottom: 0;
+}
+
+.woocommerce form .form-row {
+    padding: 0;
+    margin: 0 0 3rem;
+}
+
+.select2-container {
+    line-height: 1.3 !important;
+}
+
+.select2-container .select2-selection--single {
+    height: auto;
+    margin: 0;
+    border: 2px solid #04314A;
+    border-radius: 0;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 2.3rem 3rem;
+    text-align: left;
+    line-height: 1.3;
+    color: #04314A;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 6rem;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow b {
+    border-color: #04314A transparent transparent transparent;
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+    border: 2px solid #04314A;
+    border-radius: 0;
+}
+
+.woocommerce-additional-fields textarea {
+    margin-bottom: 0;
+}
+
+.woocommerce-checkout table.shop_table tfoot tr td {
+    width: 42%;
+}
+
+#add_payment_method #payment ul.payment_methods li:not(:first-child),
+.woocommerce-cart #payment ul.payment_methods li:not(:first-child),
+.woocommerce-checkout #payment ul.payment_methods li:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.woocommerce-checkout #payment div.payment_box {
+    margin: 1rem 0 0;
+}
+
+.btn--place-order {
+    font-family: "Oswald";
+    font-size: 1.8rem;
+    top: -0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.woocommerce-checkout table.shop_table tfoot tr.cart_subtotal th,
+.woocommerce-checkout table.shop_table tfoot tr.cart_subtotal td {
+    padding-top: 3rem;
+}
+
+.woocommerce-checkout table.shop_table tfoot tr.payment_method th,
+.woocommerce-checkout table.shop_table tfoot tr.payment_method td {
+    padding-bottom: 3rem;
+}
+
+
+
+.woocommerce-MyAccount-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 767px) {
+    .woocommerce-MyAccount-navigation {
+        margin-bottom: 3rem;
+    }
+}
+
+.xoo-wsc-items-count {
+    top: -8px;
+}
+
+.woocommerce-terms-and-conditions-wrapper .form-row.validate-required {
+	margin-top: 2rem;
+}
